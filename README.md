@@ -1,6 +1,6 @@
 # SecureAuth
 
-SecureAuth is a web application developed using the MERN (MongoDB, Express, React, Node.js) stack that provides secure authentication for users. The application provides a secure login and signup system using encryption techniques to protect sensitive information such as passwords and user data.
+SecureAuth is a website application developed using the MERN (MongoDB, Express, React, Node.js) stack that provides secure authentication for users. The application provides a secure login and signup system using encryption techniques to protect sensitive information such as passwords and user data.
 
 The application uses a mailing system (SMTP) to send confirmation emails to users upon successful registration, ensuring that only verified users can access the system. SecureAuth also includes features such as password reset and two-factor authentication to provide users with additional layers of security.
 
