@@ -1,11 +1,82 @@
-# SecureAuth
+```markdown
 
-SecureAuth is a website application developed using the MERN (MongoDB, Express, React, Node.js) stack that provides secure authentication for users. The application provides a secure login and signup system using encryption techniques to protect sensitive information such as passwords and user data.
+Welcome to the documentation for your MERN stack application! This repository contains the source code for the backend and frontend of your project. Below, you'll find important information on how to set up and configure your application using environment variables.
 
-The application uses a mailing system (SMTP) to send confirmation emails to users upon successful registration, ensuring that only verified users can access the system. SecureAuth also includes features such as password reset and two-factor authentication to provide users with additional layers of security.
+## Backend Environment Variables
 
-The frontend of the application is built using React, providing a clean and intuitive user interface that is easy to navigate. The backend is built using Node.js and Express, with MongoDB as the database for storing user information.
+Create a `.env` file in the backend directory and add the following variables:
 
-SecureAuth is designed with security in mind, utilizing industry-standard security practices to ensure that user data is protected at all times. The application also provides detailed logs and audit trails to track user activity, helping to prevent unauthorized access and providing a record of all system events.
+```dotenv
+# MongoDB connection URI
+MONGO_URI=
 
-Overall, SecureAuth is a robust and secure authentication application built using the MERN stack that provides a comprehensive solution for managing user accounts and ensuring that only authorized users can access sensitive information.
+# Node environment (e.g., development, production)
+NODE_ENV=
+
+# Secret key for JWT (JSON Web Tokens)
+JWT_SECRET=
+
+# Email settings for sending emails (using Office 365 in this case)
+EMAIL_HOST=smtp.office365.com
+EMAIL_USER=@outlook.com
+EMAIL_PASS=''
+
+# Frontend URL for CORS
+FRONTEND_URL=http://localhost:3000
+
+# Encryption key
+CRYPTR_KEY=
+```
+
+Ensure to replace the placeholders with your actual values.
+
+## Frontend Environment Variables
+
+Create a `.env.local` file in the frontend directory and add the following variables:
+
+```dotenv
+# Backend URL for API requests
+REACT_APP_BACKEND_URL=http://localhost:5000
+
+# Cloudinary configuration for image uploads
+REACT_APP_CLOUD_NAME=
+REACT_APP_UPLOAD_PRESET=
+
+# Google OAuth client ID and client secret
+REACT_APP_GOOGLE_CLIENT_ID=
+REACT_APP_GOOGLE_CLIENT_SECRET=
+```
+
+Again, replace the placeholders with your actual values.
+
+## Getting Started
+
+Follow these steps to get your MERN stack application up and running:
+
+1. Backend Setup:
+
+   ```bash
+   cd backend
+   npm install
+   npm start
+   ```
+
+2. Frontend Setup:
+
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+
+Visit `http://localhost:3000` to access the application.
+
+## Contributing
+
+If you'd like to contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/new-feature`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push to the branch: `git push origin feature/new-feature`.
+5. Submit a pull request.
